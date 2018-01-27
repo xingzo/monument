@@ -2,10 +2,7 @@
   border-sizing: border-box;
 }
 
-a{
-  text-decoration: none;
-  color: #9CC4FF;
-}
+
 
 h1{
   letter-spacing: .5em;
@@ -50,16 +47,10 @@ nav{
   left: 100px;
 
 }
-}
 
-
-}
-
-
-nav a{
+nav a {
   display: inline-block;
   padding: 10px 50px;
-
 
 }
 
@@ -100,6 +91,10 @@ img{
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: #9CC4FF;
+}
 
 main
 {
@@ -108,8 +103,15 @@ main
 }
 
 section {
+
+}
+
+.wrapper{
+
   width: 66.6666%;
   padding-right: 35px;
+
+
 }
 
 aside {
@@ -121,8 +123,6 @@ aside {
 button{
   text transform: uppercase;
 }
-
-
 
 .about
 {
@@ -151,6 +151,7 @@ button{
 .center_text
 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
@@ -211,7 +212,73 @@ button{
 
    }
 
+   /* LANDING PAGE
+      ================================================================ */
 
+    #index_header{
+
+      letter-spacing: .5em;
+      font-family: "Raleway", sans-serif;
+      color: white;
+      background-image: url("../images/home_header_bg.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      margin-top: 10px;
+
+    }
+
+    #lifestyle{
+      font-size: 12px;
+      letter-spacing: .25em;
+    }
+
+    .archive{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+    }
+
+    .about p {
+      color: #44545e;
+      text-align: center;
+
+    }
+
+    .about h3 {
+      color: #44545e;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .about h4 {
+      color: #44545e;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    article{
+      padding: 10px;
+    }
+
+    .about{
+      padding: 5em;
+      background-color: #9CC4FF;
+
+    }
+
+
+    .masonry { /* Masonry container */
+    column-count: 3;
+    column-gap: 1em;
+}
+
+    .item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
 
 
    @media screen and (max-width: 560px){
@@ -241,6 +308,9 @@ button{
        padding: 0px;
      }
      section {
+     }
+
+     .wrapper {
 
        width: 100%;
        padding-right: 0px;
@@ -253,7 +323,7 @@ button{
      }
 
      article{
-       padding: 0px;
+       padding: 10px;
      }
 
      html {
