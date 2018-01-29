@@ -1,14 +1,5 @@
 /* FORMS
    ================================================================ */
-   /* form{
-     width: 800px;
-     text-align: center;
-     margin: 20px auto;
-   }
-
-   input{
-     width: 300px;
-   } */
 
    form{
      display: flex;
@@ -56,9 +47,6 @@
      text-align: center;
 
    }
-
-
-
 
 
    @media screen and (max-width: 580px){
