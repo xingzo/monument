@@ -40,8 +40,6 @@ h1{
   height: 200px;
   margin-top: 1em;
 
-  /* margin-bottom: 60px; */
-
 }
 
 /* NAVIGATION
@@ -182,9 +180,11 @@ footer a{
 
 
 button{
-  text transform: uppercase;
+  text-transform: uppercase;
   border: 1px solid black;
+    transition-duration: 1.5s;
 }
+
 
 
 
@@ -209,6 +209,7 @@ button{
      position: absolute;
      top: 30px;
      left: 20px;
+     color: #ffffff;
 
    }
 

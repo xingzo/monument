@@ -3,9 +3,6 @@
 
  #index_header{
 
-   /* letter-spacing: .5em;
-   font-family: "Raleway", sans-serif;
-   color: white; */
    background-image: url("../images/home_header_bg.jpg");
    background-position: center;
    background-size: cover;
@@ -26,7 +23,7 @@
 
  }
 
- .about p {
+ #about p {
    color: #44545e;
    text-align: center;
 
@@ -34,6 +31,7 @@
 
 .column-third{
   width : 32%;
+
 }
 
 #landingH3{
@@ -45,7 +43,7 @@
    text-align: center;
 
  }
- .about h4 {
+ #about h4 {
    color: #44545e;
    text-align: center;
    text-transform: uppercase;
@@ -55,7 +53,7 @@
    padding: 10px;
  }
 
- .about{
+ #about{
    padding: 5em;
    background-color: #9CC4FF;
    margin: 2em auto;
@@ -63,11 +61,23 @@
  }
 
 
+
  .masonry { /* Masonry container */
  column-count: 3;
  column-gap: 1em;
  padding: 0em 2em;
+
+
  /* margin: 2em auto; */
+}
+
+.masonry img:hover {
+  transition-duration: 1.5s;
+	opacity: .6;
+   transform: scale(1.1);
+  -moz-box-shadow: 0 0 10px #ccc;
+		-webkit-box-shadow: 0 0 10px #ccc;
+		box-shadow: 0 0 10px #ccc;
 }
 
  .item { /* Masonry bricks or child elements */
@@ -76,6 +86,8 @@
  margin: 0 0 1em;
  width: 100%;
 }
+
+
 
 main
 {
@@ -107,5 +119,40 @@ main
     padding: 0px;
   }
 
-  
+
+}
+
+@media screen and (max-width: 420px){
+
+  .archive{
+    display:flex;
+    flex-direction: column;
+
+  }
+
+  .masonry { /* Masonry container */
+  column-count: 2;
+  column-gap: 1em;
+  padding: 0em 2em;
+
+
+  /* margin: 2em auto; */
+ }
+
+  .col-third p{
+    text-align: center;
+  }
+
+  button{
+    margin: auto;
+    display: block;
+  }
+
+  main
+  {
+    display: block;
+    padding: 0px;
+  }
+
+
 }
