@@ -1,0 +1,69 @@
+/* FORMS
+   ================================================================ */
+   /* form{
+     width: 800px;
+     text-align: center;
+     margin: 20px auto;
+   }
+
+   input{
+     width: 300px;
+   } */
+
+   form{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     text-align: center;
+     justify-content: space-between;
+     margin: auto;
+     padding: 1em 6em;
+   }
+
+   .top{
+     display: flex;
+     width: 100%;
+    justify-content: center
+
+   }
+   .bottom{
+     width: 100%;
+
+   }
+
+    textarea {
+	     width: 100%;
+	     display: block;
+      height: 200px;
+      }
+
+   input, textarea {
+     border: 1px solid black;
+   	margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+   	padding: 10px 10px;
+   	outline: 0;
+   }
+
+   .top input{
+     width: 50%;
+
+   }
+
+
+   #comment{
+     text-align: center;
+
+   }
+
+
+
+
+
+   @media screen and (max-width: 580px){
+     form{
+
+      padding: 0px;
+     }
+   	}

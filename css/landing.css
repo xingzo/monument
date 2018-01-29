@@ -1,0 +1,111 @@
+/* LANDING PAGE
+   ================================================================ */
+
+ #index_header{
+
+   /* letter-spacing: .5em;
+   font-family: "Raleway", sans-serif;
+   color: white; */
+   background-image: url("../images/home_header_bg.jpg");
+   background-position: center;
+   background-size: cover;
+   height: 400px;
+   margin-top: 10px;
+
+ }
+
+ #lifestyle{
+   font-size: 12px;
+   letter-spacing: .25em;
+ }
+
+ .archive{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+ }
+
+ .about p {
+   color: #44545e;
+   text-align: center;
+
+ }
+
+.column-third{
+  width : 32%;
+}
+
+#landingH3{
+  color: #44545e;
+  text-align: center;
+  text-transform: uppercase;
+}
+ h3 {
+   text-align: center;
+
+ }
+ .about h4 {
+   color: #44545e;
+   text-align: center;
+   text-transform: uppercase;
+ }
+
+ article{
+   padding: 10px;
+ }
+
+ .about{
+   padding: 5em;
+   background-color: #9CC4FF;
+   margin: 2em auto;
+
+ }
+
+
+ .masonry { /* Masonry container */
+ column-count: 3;
+ column-gap: 1em;
+ padding: 0em 2em;
+ /* margin: 2em auto; */
+}
+
+ .item { /* Masonry bricks or child elements */
+ background-color: #eee;
+ display: inline-block;
+ margin: 0 0 1em;
+ width: 100%;
+}
+
+main
+{
+  display: block;
+  padding: 1em 4em;
+}
+
+
+@media screen and (max-width: 580px){
+
+  .archive{
+    display:flex;
+    flex-direction: column;
+
+  }
+
+  .col-third p{
+    text-align: center;
+  }
+
+  button{
+    margin: auto;
+    display: block;
+  }
+
+  main
+  {
+    display: block;
+    padding: 0px;
+  }
+
+  
+}
